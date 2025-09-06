@@ -62,13 +62,6 @@ const Task = mongoose.model("Task", taskSchema);
 
 
 
-// --------------- ↓ API ROUTES ↓ -------------------
-
-
-
-
-
-
 
 // --------------- ↓ TASK ROUTES ↓ ---------------
 // let taskId = 1;
