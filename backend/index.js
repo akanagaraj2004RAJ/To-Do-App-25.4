@@ -19,8 +19,8 @@ const corsOptions = {
     Credentials: true
 }
 
-app.use(cors(corsOptions)); // Enables use of CORS - * means every domain is now allowed access to this server to send and receive data - not secure - * is for development only
-
+app.use(cors(corsOptions)); // Enables use of CORS - corsOptions means only that nominated above domain is now allowed access to this server to send and receive data - secure
+//* app.use(cors ("*"));  // Enables use of CORS - * means every domain is now allowed access to this server to send and receive data - not secure - * is for development only
 
 
 // --------------- ↓ DATABASE CONNECTION + APP STARTUP ↓ ------------------
