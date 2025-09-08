@@ -12,7 +12,14 @@ const app = express(); // using Express.js to power the app
 
 // --------------- ↓ MIDDLEWARE SETUP ↓ ------------------
 app.use(express.json()); // Uses express in Json Format
-app.use(cors('*')); // Enables use of CORS - * means every domain is now allowed access to this server to send and receive data - not secure - * is for development only
+
+const corsOptions = {
+    origin: "https://to-do-app-25-4-nine.vercel.app",
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    Credentials: true
+}
+
+app.use(cors(corsOptions)); // Enables use of CORS - * means every domain is now allowed access to this server to send and receive data - not secure - * is for development only
 
 
 
